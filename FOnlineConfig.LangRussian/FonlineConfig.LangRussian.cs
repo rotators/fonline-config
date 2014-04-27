@@ -9,11 +9,6 @@ namespace FOnlineConfigExtension
             InitLanguageRussian();
         }
 
-        public static void OnLanguageChange( string langId )
-        {
-            
-        }
-
         private static void InitLanguageRussian()
         {
             InterfaceLanguage russ = new InterfaceLanguage( "russ", "Русский" );

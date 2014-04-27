@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
+using FOnlineConfig.ExtensionMethods;
 using FOnlineConfig.Interface;
 
 namespace FOnlineConfig
@@ -13,7 +14,6 @@ namespace FOnlineConfig
             this.KeyPreview = true;
 
             InitializeComponent();
-
             foreach( InterfaceLanguage lang in InterfaceLanguage.Languages )
             {
                 cmbLanguages.Items.Add( lang.Name );
@@ -47,9 +47,9 @@ namespace FOnlineConfig
             this.MinimumSize = this.MaximumSize = new System.Drawing.Size( width, this.Height );
             this.CenterToScreen();
 
-            this.button2.Width = this.panel1.Width / 3;
-            this.button3.Width = this.panel1.Width / 3;
-            this.button4.Width = this.panel1.Width / 3;
+            this.button2.Width = this.buttons.Width / 3;
+            this.button3.Width = this.buttons.Width / 3;
+            this.button4.Width = this.buttons.Width / 3;
 
             this.Refresh();
         }
@@ -82,30 +82,20 @@ namespace FOnlineConfig
         {
             List<Control> controls = new List<Control>();
             controls.Add( this );
-            GetAllControls( this, controls );
+
+            this.GetAllControls( ref controls );
 
             foreach( Control control in controls )
             {
                 if( control.Tag == null )
                     continue;
 
-                InterfaceLanguage.TranslateControl( control, lang );
+                control.Translate( lang );
             }
 
             DllExtension.Run( "OnLanguageChange" );
 
             this.RefreshSize();
-        }
-
-        private void GetAllControls( Control parent, List<Control> list )
-        {
-            foreach( Control control in parent.Controls )
-            {
-                list.Add( control );
-
-                if( control.Controls.Count > 0 )
-                    GetAllControls( control, list );
-            }
         }
 
         private void cmbLanguages_SelectedIndexChanged( object sender, EventArgs e )

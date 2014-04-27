@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Reflection;
 
+using FOnlineConfig.ExtensionMethods;
 using FOnlineConfig.Interface;
 
 namespace FOnlineConfigExtension
@@ -26,7 +27,7 @@ namespace FOnlineConfigExtension
             Application.Idle -= Application_Idle;
 
             List<Control> controls = new List<Control>();
-            GetAllControls( formMain, controls );
+            formMain.GetAllControls( ref controls );
 
             foreach( Control control in controls )
             {
@@ -42,17 +43,6 @@ namespace FOnlineConfigExtension
                     Interface.Refresh();
                     break;
                 }
-            }
-        }
-
-        private static void GetAllControls( Control parent, List<Control> list )
-        {
-            foreach( Control control in parent.Controls )
-            {
-                list.Add( control );
-
-                if( control.Controls.Count > 0 )
-                    GetAllControls( control, list );
             }
         }
 
@@ -78,7 +68,7 @@ namespace FOnlineConfigExtension
                 return;
 
             List<Control> controls = new List<Control>();
-            GetAllControls( formMain, controls );
+            formMain.GetAllControls( ref controls );
             List<string> tags = new List<string>();
 
             foreach( Control control in controls )

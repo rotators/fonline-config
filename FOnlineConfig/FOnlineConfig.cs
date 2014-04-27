@@ -18,6 +18,7 @@ namespace FOnlineConfig
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault( false );
 
+            // always add "engl" language
             InterfaceLanguage.AddDefault( new InterfaceLanguage() );
 
             string rootName = "FOnlineConfigExtension";

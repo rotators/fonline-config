@@ -85,48 +85,6 @@ namespace FOnlineConfig.Interface
             return (false);
         }
 
-        /// <summary>
-        /// Translates control using InterfaceLanguage instance
-        /// </summary>
-        /// <param name="control">Control to translate</param>
-        /// <param name="lang">Language object</param>
-        /// <returns>True if control has been translated, false otherwise</returns>
-        public static bool TranslateControl( Control control, InterfaceLanguage lang )
-        {
-            string prefix = "lang";
-
-            if( control.Tag == null )
-                return (false);
-
-            string tag = (string)control.Tag;
-            if( !tag.StartsWith( prefix ) )
-                return (false);
-
-            tag = tag.Substring( prefix.Length );
-
-            FieldInfo field = null;
-            try
-            {
-                field = lang.GetType().GetField( tag );
-            }
-            catch( Exception )
-            {
-                return (false);
-            }
-
-            if( field == null )
-                return (false);
-            else if( !field.IsPublic )
-                return (false);
-            else if( field.FieldType != typeof( string ) )
-                return (false);
-
-            string value = (string)field.GetValue( lang );
-            control.Text = value;
-
-            return (true);
-        }
-
         #endregion // Static functions
 
         /// <summary>
@@ -192,7 +150,7 @@ namespace FOnlineConfig.Interface
         public string Volume = "Volume";
         public string Music = "Music";
 
-        public InterfaceLanguage()
+        internal InterfaceLanguage()
         {
         }
 
@@ -215,6 +173,53 @@ namespace FOnlineConfig.Interface
 
             this.Id = id;
             this.Name = name;
+        }
+    }
+}
+
+namespace FOnlineConfig.ExtensionMethods
+{
+    public static partial class ExtensionMethods
+    {
+        /// <summary>
+        /// Translates control using InterfaceLanguage instance
+        /// </summary>
+        /// <param name="control">Control to translate</param>
+        /// <param name="lang">Language object</param>
+        /// <returns>True if control has been translated, false otherwise</returns>
+        public static bool Translate( this Control control, Interface.InterfaceLanguage lang )
+        {
+            string prefix = "lang";
+
+            if( control.Tag == null )
+                return (false);
+
+            if( !control.Tag.ToString().StartsWith( prefix ) )
+                return (false);
+
+            string tag = control.Tag.ToString().Substring( prefix.Length );
+
+            FieldInfo field = null;
+            try
+            {
+                field = lang.GetType().GetField( tag );
+            }
+            catch( Exception )
+            {
+                return (false);
+            }
+
+            if( field == null )
+                return (false);
+            else if( !field.IsPublic )
+                return (false);
+            else if( field.FieldType != typeof( string ) )
+                return (false);
+
+            string value = (string)field.GetValue( lang );
+            control.Text = value;
+
+            return (true);
         }
     }
 }

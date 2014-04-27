@@ -9,11 +9,6 @@ namespace FOnlineConfigExtension
             InitLanguagePolish();
         }
 
-        public static void OnLanguageChange( string langId )
-        {
-            
-        }
-
         private static void InitLanguagePolish()
         {
             InterfaceLanguage pols = new InterfaceLanguage( "pols", "Polski" );

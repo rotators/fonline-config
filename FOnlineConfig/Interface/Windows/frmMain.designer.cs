@@ -77,7 +77,7 @@
             this.trackSound = new System.Windows.Forms.TrackBar();
             this.trackMusic = new System.Windows.Forms.TrackBar();
             this.tabTools = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.buttons = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -102,7 +102,7 @@
             this.groupVolume.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackSound)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackMusic)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.buttons.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabs
@@ -678,17 +678,17 @@
             this.tabTools.Text = "langTools";
             this.tabTools.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // buttons
             // 
-            this.panel1.Controls.Add( this.button4 );
-            this.panel1.Controls.Add( this.button3 );
-            this.panel1.Controls.Add( this.button2 );
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point( 5, 282 );
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding( 5 );
-            this.panel1.Size = new System.Drawing.Size( 487, 38 );
-            this.panel1.TabIndex = 3;
+            this.buttons.Controls.Add( this.button4 );
+            this.buttons.Controls.Add( this.button3 );
+            this.buttons.Controls.Add( this.button2 );
+            this.buttons.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.buttons.Location = new System.Drawing.Point( 5, 282 );
+            this.buttons.Name = "buttons";
+            this.buttons.Padding = new System.Windows.Forms.Padding( 5 );
+            this.buttons.Size = new System.Drawing.Size( 487, 38 );
+            this.buttons.TabIndex = 3;
             // 
             // button4
             // 
@@ -729,7 +729,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size( 497, 325 );
             this.Controls.Add( this.tabs );
-            this.Controls.Add( this.panel1 );
+            this.Controls.Add( this.buttons );
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject( "$this.Icon" )));
             this.MaximizeBox = false;
@@ -768,7 +768,7 @@
             this.groupVolume.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackSound)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackMusic)).EndInit();
-            this.panel1.ResumeLayout( false );
+            this.buttons.ResumeLayout( false );
             this.ResumeLayout( false );
 
         }
@@ -823,7 +823,7 @@
         private System.Windows.Forms.Label labelCombatDamage;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel buttons;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;

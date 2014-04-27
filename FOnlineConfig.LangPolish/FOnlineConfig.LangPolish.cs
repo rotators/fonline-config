@@ -35,6 +35,7 @@ namespace FOnlineConfigExtension
 
             // tabSound
             pols.Music = "Muzyka";
+
             InterfaceLanguage.Add( pols );
         }
     }

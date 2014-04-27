@@ -21,13 +21,17 @@ namespace FOnlineConfig
             // always add "engl" language
             InterfaceLanguage.AddDefault( new InterfaceLanguage() );
 
+            bool init = false;
             string rootName = "FOnlineConfigExtension";
 
-            if( DllExtension.Load( "FOnlineConfig.dll", rootName ) ||
-                DllExtension.LoadPattern( "FOnlineConfig.*.dll", rootName ) > 0 )
-            {
+            if( DllExtension.Load( "FOnlineConfig.dll", rootName ) )
+                init = true;
+
+            if( DllExtension.LoadPattern( "FOnlineConfig.*.dll", rootName ) > 0 )
+                init = true;
+
+            if( init )
                 DllExtension.Run( "OnInit" );
-            }
 
             formMain = new frmMain();
             Application.Run( formMain );

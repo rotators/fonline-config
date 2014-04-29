@@ -32,8 +32,8 @@
             this.tabDebug = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabLanguages = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tree = new System.Windows.Forms.TreeView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabDebugParent.SuspendLayout();
             this.tabDebug.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -80,18 +80,8 @@
             this.tabLanguages.Padding = new System.Windows.Forms.Padding( 3 );
             this.tabLanguages.Size = new System.Drawing.Size( 270, 215 );
             this.tabLanguages.TabIndex = 0;
-            this.tabLanguages.Text = "Languages";
+            this.tabLanguages.Text = "Language";
             this.tabLanguages.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point( 4, 22 );
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding( 3 );
-            this.tabPage2.Size = new System.Drawing.Size( 270, 215 );
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tree
             // 
@@ -103,6 +93,16 @@
             this.tree.PathSeparator = "/";
             this.tree.Size = new System.Drawing.Size( 264, 209 );
             this.tree.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point( 4, 22 );
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding( 3 );
+            this.tabPage2.Size = new System.Drawing.Size( 270, 215 );
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // frmDebug
             // 

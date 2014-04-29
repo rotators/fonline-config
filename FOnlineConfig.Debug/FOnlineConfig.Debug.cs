@@ -26,24 +26,10 @@ namespace FOnlineConfigExtension
 
             Application.Idle -= Application_Idle;
 
-            List<Control> controls = new List<Control>();
-            formMain.GetAllControls( ref controls );
+            frmDebug form = new frmDebug();
+            Init( formMain, form );
+            Interface.AddRootTabPage( form.tabDebugParent.TabPages[0]);
 
-            foreach( Control control in controls )
-            {
-                if( control.GetType().Name == "TabControl" && control.Name == "tabs" )
-                {
-                    frmDebug formDebug = new frmDebug();
-
-                    TabControl tab = (TabControl)control;
-                    tab.TabPages.Add( formDebug.tabDebugParent.TabPages[0] );
-
-                    Init( formMain, formDebug );
-
-                    Interface.Refresh();
-                    break;
-                }
-            }
         }
 
         private static void Init( Form formMain, frmDebug formDebug )
@@ -80,6 +66,8 @@ namespace FOnlineConfigExtension
                         tags.Add( tag );
                 }
             }
+
+            List<string> unusedTags = tags;
 
             TreeNode loaded = new TreeNode( "Loaded" );
             foreach( InterfaceLanguage lang in InterfaceLanguage.Languages )

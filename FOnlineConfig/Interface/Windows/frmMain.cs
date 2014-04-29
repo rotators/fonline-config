@@ -43,14 +43,11 @@ namespace FOnlineConfig
 
         public void RefreshSize()
         {
-            int width = tabs.GetTabRect( tabs.TabCount - 1 ).Right + tabs.GetTabRect( tabs.TabCount - 1 ).Width;
+            /*
+            int width = tabRoot.GetTabRect( tabRoot.TabCount - 1 ).Right + tabRoot.GetTabRect( tabRoot.TabCount - 1 ).Width;
             this.MinimumSize = this.MaximumSize = new System.Drawing.Size( width, this.Height );
             this.CenterToScreen();
-
-            this.button2.Width = this.buttons.Width / 3;
-            this.button3.Width = this.buttons.Width / 3;
-            this.button4.Width = this.buttons.Width / 3;
-
+            */
             this.Refresh();
         }
 
@@ -59,9 +56,9 @@ namespace FOnlineConfig
         /// </summary>
         private void HideTools()
         {
-            if( this.tabs.TabPages.Contains( this.tabTools ) )
+            if( this.tabRoot.TabPages.Contains( this.tabTools ) )
             {
-                this.tabs.TabPages.Remove( this.tabTools );
+                this.tabRoot.TabPages.Remove( this.tabTools );
                 this.RefreshSize();
             }
         }
@@ -71,9 +68,9 @@ namespace FOnlineConfig
         /// </summary>
         private void ShowTools()
         {
-            if( !this.tabs.TabPages.Contains( this.tabTools ) )
+            if( !this.tabRoot.TabPages.Contains( this.tabTools ) )
             {
-                this.tabs.TabPages.Add( this.tabTools );
+                this.tabRoot.TabPages.Add( this.tabTools );
                 this.RefreshSize();
             }
         }
@@ -96,23 +93,23 @@ namespace FOnlineConfig
             DllExtension.Run( "OnLanguageChange" );
 
             this.RefreshSize();
+            this.OnAutoSizeChanged( EventArgs.Empty );
         }
 
         private void cmbLanguages_SelectedIndexChanged( object sender, EventArgs e )
         {
-            // and that, kids, is why we dont expose InterfaceLanguage::Languages
             InterfaceLanguage lang = InterfaceLanguage.Languages[this.cmbLanguages.SelectedIndex];
             this.ChangeLanguage( lang );
         }
 
         private void trackMusic_Scroll( object sender, EventArgs e )
         {
-            labelMusicValue.Text = this.trackMusic.Value + "%";
+            this.labelMusicValue.Text = this.trackMusic.Value + "%";
         }
 
         private void trackSound_Scroll( object sender, EventArgs e )
         {
-            labelSoundVolume.Text = this.trackSound.Value + "%";
+            this.labelSoundVolume.Text = this.trackSound.Value + "%";
         }
 
         private void checkLog_CheckedChanged( object sender, EventArgs e )
@@ -123,6 +120,11 @@ namespace FOnlineConfig
             {
                 control.Enabled = this.checkLog.Checked;
             }
+        }
+
+        private void button3_Click( object sender, EventArgs e )
+        {
+            Application.Exit();
         }
     }
 }

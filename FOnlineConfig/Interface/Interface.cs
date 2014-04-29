@@ -9,6 +9,13 @@ namespace FOnlineConfig.Interface
     /// <remarks>Available for extensions</remarks>
     public static class Interface
     {
+        public enum SubTab
+        {
+            Game,
+            Net,
+            Tools
+        };
+
         /// <summary>
         /// Refresh main window
         /// </summary>
@@ -16,6 +23,24 @@ namespace FOnlineConfig.Interface
         public static void Refresh()
         {
             FOnlineConfig.formMain.RefreshSize();
+        }
+
+        public static void AddRootTabPage( TabPage newPage )
+        {
+            FOnlineConfig.formMain.tabRoot.TabPages.Add( newPage );
+        }
+
+        public static bool AddSubTabPage( SubTab subTab, TabPage newPage )
+        {
+            TabControl parent = null;
+            if( subTab == SubTab.Game )
+                parent = FOnlineConfig.formMain.tabSubGame;
+
+            if( parent == null )
+                return (false);
+
+            parent.TabPages.Add( newPage );
+            return (false);
         }
     }
 }

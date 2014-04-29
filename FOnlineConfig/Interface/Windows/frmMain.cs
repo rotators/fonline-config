@@ -16,11 +16,8 @@ namespace FOnlineConfig
             InitializeComponent();
             foreach( InterfaceLanguage lang in InterfaceLanguage.Languages )
             {
-                cmbLanguages.Items.Add( lang.Name );
+                this.AddLanguage( lang );
             }
-
-            if( cmbLanguages.Items.Count <= 1 )
-                cmbLanguages.Enabled = false;
 
             this.HideTools();
 
@@ -40,6 +37,38 @@ namespace FOnlineConfig
             : this()
         {
         }
+
+        #region Language
+
+        public void AddLanguage( InterfaceLanguage lang )
+        {
+            this.cmbLanguages.Items.Add( lang.Name );
+
+            this.cmbLanguages.Enabled = cmbLanguages.Items.Count > 1;
+        }
+
+        private void ChangeLanguage( InterfaceLanguage lang )
+        {
+            List<Control> controls = new List<Control>();
+            controls.Add( this );
+
+            this.GetAllControls( ref controls );
+
+            foreach( Control control in controls )
+            {
+                if( control.Tag == null )
+                    continue;
+
+                control.Translate( lang );
+            }
+
+            DllExtension.Run( "OnLanguageChange" );
+
+            this.RefreshSize();
+            this.OnAutoSizeChanged( EventArgs.Empty );
+        }
+
+        #endregion // Language
 
         public void RefreshSize()
         {
@@ -73,27 +102,6 @@ namespace FOnlineConfig
                 this.tabRoot.TabPages.Add( this.tabTools );
                 this.RefreshSize();
             }
-        }
-
-        private void ChangeLanguage( InterfaceLanguage lang )
-        {
-            List<Control> controls = new List<Control>();
-            controls.Add( this );
-
-            this.GetAllControls( ref controls );
-
-            foreach( Control control in controls )
-            {
-                if( control.Tag == null )
-                    continue;
-
-                control.Translate( lang );
-            }
-
-            DllExtension.Run( "OnLanguageChange" );
-
-            this.RefreshSize();
-            this.OnAutoSizeChanged( EventArgs.Empty );
         }
 
         private void cmbLanguages_SelectedIndexChanged( object sender, EventArgs e )

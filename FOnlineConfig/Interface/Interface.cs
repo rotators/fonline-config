@@ -25,13 +25,20 @@ namespace FOnlineConfig.Interface
             FOnlineConfig.formMain.RefreshSize();
         }
 
-        public static void AddRootTabPage( TabPage newPage )
+        public static bool AddRootTabPage( TabPage page )
         {
-            FOnlineConfig.formMain.tabRoot.TabPages.Add( newPage );
+            if( FOnlineConfig.formMain == null )
+                return( false);
+
+            FOnlineConfig.formMain.tabRoot.TabPages.Add( page );
+            return (true);
         }
 
-        public static bool AddSubTabPage( SubTab subTab, TabPage newPage )
+        public static bool AddSubTabPage( SubTab subTab, TabPage page )
         {
+            if( FOnlineConfig.formMain == null )
+                return (false);
+
             TabControl parent = null;
             if( subTab == SubTab.Game )
                 parent = FOnlineConfig.formMain.tabSubGame;
@@ -39,8 +46,8 @@ namespace FOnlineConfig.Interface
             if( parent == null )
                 return (false);
 
-            parent.TabPages.Add( newPage );
-            return (false);
+            parent.TabPages.Add( page );
+            return (true);
         }
     }
 }

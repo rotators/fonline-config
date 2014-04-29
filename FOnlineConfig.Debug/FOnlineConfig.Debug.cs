@@ -110,7 +110,7 @@ namespace FOnlineConfigExtension
             }
             if( tags.Count > 0 )
             {
-                TreeNode notImplemented = formDebug.tree.Nodes.Add( "Not implemented (" + tags.Count + ")" );
+                TreeNode notImplemented = formDebug.treeLang.Nodes.Add( "Not implemented (" + tags.Count + ")" );
                 foreach( string tag in tags )
                 {
                     notImplemented.Nodes.Add( tag );
@@ -119,12 +119,12 @@ namespace FOnlineConfigExtension
             if( loaded.Nodes.Count > 0 )
             {
                 loaded.Text += " (" + loaded.Nodes.Count + ")";
-                formDebug.tree.Nodes.Add( loaded );
+                formDebug.treeLang.Nodes.Add( loaded );
             }
 
-            if( formDebug.tree.Nodes.Count == 1 )
+            if( formDebug.treeLang.Nodes.Count == 1 )
             {
-                formDebug.tree.Nodes[0].Expand();
+                formDebug.treeLang.Nodes[0].Expand();
             }
         }
     }

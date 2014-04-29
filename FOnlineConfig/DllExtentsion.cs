@@ -227,7 +227,7 @@ namespace FOnlineConfig
             {
                 method.Invoke( null, null );
             }
-            catch( Exception )
+            catch( Exception e )
             {
                 return (false);
             }
@@ -235,3 +235,4 @@ namespace FOnlineConfig
         }
     }
 }
+

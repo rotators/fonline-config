@@ -18,8 +18,10 @@ namespace FOnlineConfig
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault( false );
 
-            // always add "engl" language
+            // always add "engl" language as default
             InterfaceLanguage.AddDefault( new InterfaceLanguage() );
+
+            formMain = new frmMain();
 
             bool init = false;
             string rootName = "FOnlineConfigExtension";
@@ -33,7 +35,6 @@ namespace FOnlineConfig
             if( init )
                 DllExtension.Run( "OnInit" );
 
-            formMain = new frmMain();
             Application.Run( formMain );
         }
     }

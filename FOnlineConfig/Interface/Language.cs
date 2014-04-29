@@ -46,6 +46,9 @@ namespace FOnlineConfig.Interface
 
             Languages.Add( newLang );
 
+            if( FOnlineConfig.formMain != null )
+                FOnlineConfig.formMain.AddLanguage( newLang );
+
             return (true);
         }
 

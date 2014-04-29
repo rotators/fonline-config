@@ -35,24 +35,38 @@
             this.tabTools = new System.Windows.Forms.TabPage();
             this.tabNet = new System.Windows.Forms.TabPage();
             this.groupProxy = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.groupServer = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelHost = new System.Windows.Forms.Label();
             this.tabGame = new System.Windows.Forms.TabPage();
             this.tabSubGame = new System.Windows.Forms.TabControl();
             this.tabInterface = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.numTextDelay = new System.Windows.Forms.NumericUpDown();
+            this.labelScrollDelay = new System.Windows.Forms.Label();
             this.labelScrollStep = new System.Windows.Forms.Label();
             this.numScrollStep = new System.Windows.Forms.NumericUpDown();
-            this.labelTextDelay = new System.Windows.Forms.Label();
             this.numScrollDelay = new System.Windows.Forms.NumericUpDown();
-            this.labelScrollDelay = new System.Windows.Forms.Label();
+            this.labelTextDelay = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.labelCombatDamage = new System.Windows.Forms.Label();
+            this.numTextDelay = new System.Windows.Forms.NumericUpDown();
+            this.numCombatDamage = new System.Windows.Forms.NumericUpDown();
+            this.checkInvert = new System.Windows.Forms.CheckBox();
             this.groupLanguage = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.cmbLanguages = new System.Windows.Forms.ComboBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabCombat = new System.Windows.Forms.TabPage();
             this.groupCombatMessages = new System.Windows.Forms.GroupBox();
             this.radioCombatMessagesBrief = new System.Windows.Forms.RadioButton();
@@ -74,44 +88,34 @@
             this.labelMusic = new System.Windows.Forms.Label();
             this.trackSound = new System.Windows.Forms.TrackBar();
             this.trackMusic = new System.Windows.Forms.TrackBar();
-            this.tabRoot = new System.Windows.Forms.TabControl();
-            this.labelCombatDamage = new System.Windows.Forms.Label();
-            this.numCombatDamage = new System.Windows.Forms.NumericUpDown();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkLog = new System.Windows.Forms.CheckBox();
-            this.checkLogTime = new System.Windows.Forms.CheckBox();
+            this.tabMisc = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.checkFlush = new System.Windows.Forms.CheckBox();
             this.checkBeep = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.checkLog = new System.Windows.Forms.CheckBox();
+            this.checkLogTime = new System.Windows.Forms.CheckBox();
+            this.tabRoot = new System.Windows.Forms.TabControl();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkInvert = new System.Windows.Forms.CheckBox();
-            this.labelHost = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupServer = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabNet.SuspendLayout();
             this.groupProxy.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.groupServer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabGame.SuspendLayout();
             this.tabSubGame.SuspendLayout();
             this.tabInterface.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTextDelay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numScrollStep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numScrollDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTextDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCombatDamage)).BeginInit();
             this.groupLanguage.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabCombat.SuspendLayout();
             this.groupCombatMessages.SuspendLayout();
             this.groupCombatAmmo.SuspendLayout();
@@ -120,18 +124,14 @@
             this.groupVolume.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackSound)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackMusic)).BeginInit();
-            this.tabRoot.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCombatDamage)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.tabMisc.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.tabRoot.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.groupServer.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -175,7 +175,7 @@
             // 
             this.tabTools.Location = new System.Drawing.Point( 4, 25 );
             this.tabTools.Name = "tabTools";
-            this.tabTools.Size = new System.Drawing.Size( 375, 255 );
+            this.tabTools.Size = new System.Drawing.Size( 321, 255 );
             this.tabTools.TabIndex = 6;
             this.tabTools.Tag = "langTools";
             this.tabTools.Text = "langTools";
@@ -208,6 +208,69 @@
             this.groupProxy.TabStop = false;
             this.groupProxy.Tag = "langProxy";
             this.groupProxy.Text = "langProxy";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add( this.radioButton4 );
+            this.groupBox1.Controls.Add( this.radioButton3 );
+            this.groupBox1.Controls.Add( this.radioButton2 );
+            this.groupBox1.Controls.Add( this.radioButton1 );
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point( 3, 16 );
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size( 315, 56 );
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Tag = "langProxyType";
+            this.groupBox1.Text = "langProxyType";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radioButton4.Location = new System.Drawing.Point( 258, 16 );
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size( 85, 37 );
+            this.radioButton4.TabIndex = 10;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "radioButton4";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radioButton3.Location = new System.Drawing.Point( 173, 16 );
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size( 85, 37 );
+            this.radioButton3.TabIndex = 9;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "radioButton3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radioButton2.Location = new System.Drawing.Point( 88, 16 );
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size( 85, 37 );
+            this.radioButton2.TabIndex = 8;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "radioButton2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radioButton1.Location = new System.Drawing.Point( 3, 16 );
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size( 85, 37 );
+            this.radioButton1.TabIndex = 7;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -245,6 +308,60 @@
             this.comboBox2.Size = new System.Drawing.Size( 200, 21 );
             this.comboBox2.TabIndex = 4;
             // 
+            // groupServer
+            // 
+            this.groupServer.Controls.Add( this.label1 );
+            this.groupServer.Controls.Add( this.numericUpDown1 );
+            this.groupServer.Controls.Add( this.comboBox1 );
+            this.groupServer.Controls.Add( this.labelHost );
+            this.groupServer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupServer.Location = new System.Drawing.Point( 0, 0 );
+            this.groupServer.Name = "groupServer";
+            this.groupServer.Size = new System.Drawing.Size( 321, 71 );
+            this.groupServer.TabIndex = 0;
+            this.groupServer.TabStop = false;
+            this.groupServer.Text = "langServer";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point( 267, 21 );
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size( 46, 13 );
+            this.label1.TabIndex = 3;
+            this.label1.Tag = "langPort";
+            this.label1.Text = "langPort";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point( 270, 37 );
+            this.numericUpDown1.Maximum = new decimal( new int[] {
+            65535,
+            0,
+            0,
+            0} );
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size( 92, 20 );
+            this.numericUpDown1.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point( 7, 37 );
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size( 200, 21 );
+            this.comboBox1.TabIndex = 1;
+            // 
+            // labelHost
+            // 
+            this.labelHost.AutoSize = true;
+            this.labelHost.Location = new System.Drawing.Point( 7, 20 );
+            this.labelHost.Name = "labelHost";
+            this.labelHost.Size = new System.Drawing.Size( 49, 13 );
+            this.labelHost.TabIndex = 0;
+            this.labelHost.Tag = "langHost";
+            this.labelHost.Text = "langHost";
+            // 
             // tabGame
             // 
             this.tabGame.Controls.Add( this.tabSubGame );
@@ -262,7 +379,7 @@
             this.tabSubGame.Controls.Add( this.tabCombat );
             this.tabSubGame.Controls.Add( this.tabVideo );
             this.tabSubGame.Controls.Add( this.tabSound );
-            this.tabSubGame.Controls.Add( this.tabPage2 );
+            this.tabSubGame.Controls.Add( this.tabMisc );
             this.tabSubGame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabSubGame.Location = new System.Drawing.Point( 0, 0 );
             this.tabSubGame.Name = "tabSubGame";
@@ -282,6 +399,18 @@
             this.tabInterface.Tag = "langInterface";
             this.tabInterface.Text = "langInterface";
             this.tabInterface.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.AutoSize = true;
+            this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox2.Controls.Add( this.tableLayoutPanel1 );
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point( 3, 53 );
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size( 307, 173 );
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -313,26 +442,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size( 301, 154 );
             this.tableLayoutPanel1.TabIndex = 7;
             // 
-            // checkBox1
+            // labelScrollDelay
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkBox1.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan( this.checkBox1, 3 );
-            this.checkBox1.Location = new System.Drawing.Point( 3, 104 );
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size( 99, 17 );
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Tag = "langAlwaysRun";
-            this.checkBox1.Text = "langAlwaysRun";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // numTextDelay
-            // 
-            this.numTextDelay.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.numTextDelay.Location = new System.Drawing.Point( 198, 55 );
-            this.numTextDelay.Name = "numTextDelay";
-            this.numTextDelay.Size = new System.Drawing.Size( 100, 20 );
-            this.numTextDelay.TabIndex = 9;
+            this.labelScrollDelay.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelScrollDelay.AutoSize = true;
+            this.labelScrollDelay.Location = new System.Drawing.Point( 3, 6 );
+            this.labelScrollDelay.Name = "labelScrollDelay";
+            this.labelScrollDelay.Size = new System.Drawing.Size( 80, 13 );
+            this.labelScrollDelay.TabIndex = 3;
+            this.labelScrollDelay.Tag = "langScrollDelay";
+            this.labelScrollDelay.Text = "langScrollDelay";
             // 
             // labelScrollStep
             // 
@@ -353,6 +472,14 @@
             this.numScrollStep.Size = new System.Drawing.Size( 100, 20 );
             this.numScrollStep.TabIndex = 1;
             // 
+            // numScrollDelay
+            // 
+            this.numScrollDelay.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.numScrollDelay.Location = new System.Drawing.Point( 198, 3 );
+            this.numScrollDelay.Name = "numScrollDelay";
+            this.numScrollDelay.Size = new System.Drawing.Size( 100, 20 );
+            this.numScrollDelay.TabIndex = 0;
+            // 
             // labelTextDelay
             // 
             this.labelTextDelay.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -364,24 +491,63 @@
             this.labelTextDelay.Tag = "langTextDelay";
             this.labelTextDelay.Text = "langTextDelay";
             // 
-            // numScrollDelay
+            // checkBox1
             // 
-            this.numScrollDelay.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.numScrollDelay.Location = new System.Drawing.Point( 198, 3 );
-            this.numScrollDelay.Name = "numScrollDelay";
-            this.numScrollDelay.Size = new System.Drawing.Size( 100, 20 );
-            this.numScrollDelay.TabIndex = 0;
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkBox1.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan( this.checkBox1, 3 );
+            this.checkBox1.Location = new System.Drawing.Point( 3, 104 );
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size( 99, 17 );
+            this.checkBox1.TabIndex = 6;
+            this.checkBox1.Tag = "langAlwaysRun";
+            this.checkBox1.Text = "langAlwaysRun";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // labelScrollDelay
+            // labelCombatDamage
             // 
-            this.labelScrollDelay.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelScrollDelay.AutoSize = true;
-            this.labelScrollDelay.Location = new System.Drawing.Point( 3, 6 );
-            this.labelScrollDelay.Name = "labelScrollDelay";
-            this.labelScrollDelay.Size = new System.Drawing.Size( 80, 13 );
-            this.labelScrollDelay.TabIndex = 3;
-            this.labelScrollDelay.Tag = "langScrollDelay";
-            this.labelScrollDelay.Text = "langScrollDelay";
+            this.labelCombatDamage.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.labelCombatDamage.AutoSize = true;
+            this.labelCombatDamage.Location = new System.Drawing.Point( 3, 83 );
+            this.labelCombatDamage.Name = "labelCombatDamage";
+            this.labelCombatDamage.Size = new System.Drawing.Size( 130, 13 );
+            this.labelCombatDamage.TabIndex = 10;
+            this.labelCombatDamage.Tag = "langCombatDamageDelay";
+            this.labelCombatDamage.Text = "langCombatDamageDelay";
+            // 
+            // numTextDelay
+            // 
+            this.numTextDelay.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.numTextDelay.Location = new System.Drawing.Point( 198, 55 );
+            this.numTextDelay.Name = "numTextDelay";
+            this.numTextDelay.Size = new System.Drawing.Size( 100, 20 );
+            this.numTextDelay.TabIndex = 9;
+            // 
+            // numCombatDamage
+            // 
+            this.numCombatDamage.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.numCombatDamage.Location = new System.Drawing.Point( 198, 81 );
+            this.numCombatDamage.Margin = new System.Windows.Forms.Padding( 3, 3, 3, 0 );
+            this.numCombatDamage.Maximum = new decimal( new int[] {
+            10000,
+            0,
+            0,
+            0} );
+            this.numCombatDamage.Name = "numCombatDamage";
+            this.numCombatDamage.Size = new System.Drawing.Size( 100, 20 );
+            this.numCombatDamage.TabIndex = 11;
+            // 
+            // checkInvert
+            // 
+            this.checkInvert.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.checkInvert.AutoSize = true;
+            this.checkInvert.Location = new System.Drawing.Point( 3, 130 );
+            this.checkInvert.Name = "checkInvert";
+            this.checkInvert.Size = new System.Drawing.Size( 73, 17 );
+            this.checkInvert.TabIndex = 12;
+            this.checkInvert.Tag = "langInvert";
+            this.checkInvert.Text = "langInvert";
+            this.checkInvert.UseVisualStyleBackColor = true;
             // 
             // groupLanguage
             // 
@@ -396,6 +562,16 @@
             this.groupLanguage.Tag = "langLanguage";
             this.groupLanguage.Text = "langLanguage";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point( 162, 22 );
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size( 93, 13 );
+            this.label3.TabIndex = 1;
+            this.label3.Tag = "langLanguageInfo";
+            this.label3.Text = "langLanguageInfo";
+            // 
             // cmbLanguages
             // 
             this.cmbLanguages.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -405,19 +581,6 @@
             this.cmbLanguages.Size = new System.Drawing.Size( 150, 21 );
             this.cmbLanguages.TabIndex = 0;
             this.cmbLanguages.SelectedIndexChanged += new System.EventHandler( this.cmbLanguages_SelectedIndexChanged );
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add( this.groupBox4 );
-            this.tabPage2.Controls.Add( this.groupBox3 );
-            this.tabPage2.Location = new System.Drawing.Point( 4, 22 );
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding( 3 );
-            this.tabPage2.Size = new System.Drawing.Size( 313, 229 );
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Tag = "langMisc";
-            this.tabPage2.Text = "langMisc";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabCombat
             // 
@@ -689,117 +852,18 @@
             this.trackMusic.TickFrequency = 5;
             this.trackMusic.Scroll += new System.EventHandler( this.trackMusic_Scroll );
             // 
-            // tabRoot
+            // tabMisc
             // 
-            this.tabRoot.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.tabRoot.Controls.Add( this.tabGame );
-            this.tabRoot.Controls.Add( this.tabNet );
-            this.tabRoot.Controls.Add( this.tabTools );
-            this.tabRoot.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabRoot.Location = new System.Drawing.Point( 3, 3 );
-            this.tabRoot.Name = "tabRoot";
-            this.tabRoot.SelectedIndex = 0;
-            this.tabRoot.Size = new System.Drawing.Size( 329, 284 );
-            this.tabRoot.TabIndex = 0;
-            // 
-            // labelCombatDamage
-            // 
-            this.labelCombatDamage.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.labelCombatDamage.AutoSize = true;
-            this.labelCombatDamage.Location = new System.Drawing.Point( 3, 83 );
-            this.labelCombatDamage.Name = "labelCombatDamage";
-            this.labelCombatDamage.Size = new System.Drawing.Size( 130, 13 );
-            this.labelCombatDamage.TabIndex = 10;
-            this.labelCombatDamage.Tag = "langCombatDamageDelay";
-            this.labelCombatDamage.Text = "langCombatDamageDelay";
-            // 
-            // numCombatDamage
-            // 
-            this.numCombatDamage.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.numCombatDamage.Location = new System.Drawing.Point( 198, 81 );
-            this.numCombatDamage.Margin = new System.Windows.Forms.Padding( 3, 3, 3, 0 );
-            this.numCombatDamage.Maximum = new decimal( new int[] {
-            10000,
-            0,
-            0,
-            0} );
-            this.numCombatDamage.Name = "numCombatDamage";
-            this.numCombatDamage.Size = new System.Drawing.Size( 100, 20 );
-            this.numCombatDamage.TabIndex = 11;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.AutoSize = true;
-            this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox2.Controls.Add( this.tableLayoutPanel1 );
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point( 3, 53 );
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size( 307, 173 );
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.AutoSize = true;
-            this.groupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox3.Controls.Add( this.flowLayoutPanel1 );
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox3.Location = new System.Drawing.Point( 3, 3 );
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size( 307, 65 );
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Tag = "langLog";
-            this.groupBox3.Text = "langLog";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point( 162, 22 );
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size( 93, 13 );
-            this.label3.TabIndex = 1;
-            this.label3.Tag = "langLanguageInfo";
-            this.label3.Text = "langLanguageInfo";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.Controls.Add( this.checkLog );
-            this.flowLayoutPanel1.Controls.Add( this.checkLogTime );
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point( 3, 16 );
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size( 301, 46 );
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // checkLog
-            // 
-            this.checkLog.AutoSize = true;
-            this.checkLog.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkLog.Location = new System.Drawing.Point( 3, 3 );
-            this.checkLog.Name = "checkLog";
-            this.checkLog.Size = new System.Drawing.Size( 87, 17 );
-            this.checkLog.TabIndex = 4;
-            this.checkLog.Tag = "langLog";
-            this.checkLog.Text = "langLog";
-            this.checkLog.UseVisualStyleBackColor = true;
-            this.checkLog.CheckedChanged += new System.EventHandler( this.checkLog_CheckedChanged );
-            // 
-            // checkLogTime
-            // 
-            this.checkLogTime.AutoSize = true;
-            this.checkLogTime.Dock = System.Windows.Forms.DockStyle.Top;
-            this.checkLogTime.Location = new System.Drawing.Point( 3, 26 );
-            this.checkLogTime.Name = "checkLogTime";
-            this.checkLogTime.Size = new System.Drawing.Size( 87, 17 );
-            this.checkLogTime.TabIndex = 5;
-            this.checkLogTime.Tag = "langLogTime";
-            this.checkLogTime.Text = "langLogTime";
-            this.checkLogTime.UseVisualStyleBackColor = true;
+            this.tabMisc.Controls.Add( this.groupBox4 );
+            this.tabMisc.Controls.Add( this.groupBox3 );
+            this.tabMisc.Location = new System.Drawing.Point( 4, 22 );
+            this.tabMisc.Name = "tabMisc";
+            this.tabMisc.Padding = new System.Windows.Forms.Padding( 3 );
+            this.tabMisc.Size = new System.Drawing.Size( 313, 229 );
+            this.tabMisc.TabIndex = 1;
+            this.tabMisc.Tag = "langMisc";
+            this.tabMisc.Text = "langMisc";
+            this.tabMisc.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -850,6 +914,71 @@
             this.checkBeep.Text = "langBeep";
             this.checkBeep.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.AutoSize = true;
+            this.groupBox3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox3.Controls.Add( this.flowLayoutPanel1 );
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox3.Location = new System.Drawing.Point( 3, 3 );
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size( 307, 65 );
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Tag = "langLog";
+            this.groupBox3.Text = "langLog";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel1.Controls.Add( this.checkLog );
+            this.flowLayoutPanel1.Controls.Add( this.checkLogTime );
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point( 3, 16 );
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size( 301, 46 );
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // checkLog
+            // 
+            this.checkLog.AutoSize = true;
+            this.checkLog.Dock = System.Windows.Forms.DockStyle.Top;
+            this.checkLog.Location = new System.Drawing.Point( 3, 3 );
+            this.checkLog.Name = "checkLog";
+            this.checkLog.Size = new System.Drawing.Size( 87, 17 );
+            this.checkLog.TabIndex = 4;
+            this.checkLog.Tag = "langLog";
+            this.checkLog.Text = "langLog";
+            this.checkLog.UseVisualStyleBackColor = true;
+            this.checkLog.CheckedChanged += new System.EventHandler( this.checkLog_CheckedChanged );
+            // 
+            // checkLogTime
+            // 
+            this.checkLogTime.AutoSize = true;
+            this.checkLogTime.Dock = System.Windows.Forms.DockStyle.Top;
+            this.checkLogTime.Location = new System.Drawing.Point( 3, 26 );
+            this.checkLogTime.Name = "checkLogTime";
+            this.checkLogTime.Size = new System.Drawing.Size( 87, 17 );
+            this.checkLogTime.TabIndex = 5;
+            this.checkLogTime.Tag = "langLogTime";
+            this.checkLogTime.Text = "langLogTime";
+            this.checkLogTime.UseVisualStyleBackColor = true;
+            // 
+            // tabRoot
+            // 
+            this.tabRoot.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabRoot.Controls.Add( this.tabGame );
+            this.tabRoot.Controls.Add( this.tabNet );
+            this.tabRoot.Controls.Add( this.tabTools );
+            this.tabRoot.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabRoot.Location = new System.Drawing.Point( 3, 3 );
+            this.tabRoot.Name = "tabRoot";
+            this.tabRoot.SelectedIndex = 0;
+            this.tabRoot.Size = new System.Drawing.Size( 329, 284 );
+            this.tabRoot.TabIndex = 0;
+            // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.AutoSize = true;
@@ -883,135 +1012,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size( 329, 37 );
             this.tableLayoutPanel2.TabIndex = 4;
             // 
-            // checkInvert
-            // 
-            this.checkInvert.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.checkInvert.AutoSize = true;
-            this.checkInvert.Location = new System.Drawing.Point( 3, 130 );
-            this.checkInvert.Name = "checkInvert";
-            this.checkInvert.Size = new System.Drawing.Size( 73, 17 );
-            this.checkInvert.TabIndex = 12;
-            this.checkInvert.Tag = "langInvert";
-            this.checkInvert.Text = "langInvert";
-            this.checkInvert.UseVisualStyleBackColor = true;
-            // 
-            // labelHost
-            // 
-            this.labelHost.AutoSize = true;
-            this.labelHost.Location = new System.Drawing.Point( 7, 20 );
-            this.labelHost.Name = "labelHost";
-            this.labelHost.Size = new System.Drawing.Size( 49, 13 );
-            this.labelHost.TabIndex = 0;
-            this.labelHost.Tag = "langHost";
-            this.labelHost.Text = "langHost";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point( 7, 37 );
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size( 200, 21 );
-            this.comboBox1.TabIndex = 1;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point( 270, 37 );
-            this.numericUpDown1.Maximum = new decimal( new int[] {
-            65535,
-            0,
-            0,
-            0} );
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size( 92, 20 );
-            this.numericUpDown1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point( 267, 21 );
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size( 46, 13 );
-            this.label1.TabIndex = 3;
-            this.label1.Tag = "langPort";
-            this.label1.Text = "langPort";
-            // 
-            // groupServer
-            // 
-            this.groupServer.Controls.Add( this.label1 );
-            this.groupServer.Controls.Add( this.numericUpDown1 );
-            this.groupServer.Controls.Add( this.comboBox1 );
-            this.groupServer.Controls.Add( this.labelHost );
-            this.groupServer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupServer.Location = new System.Drawing.Point( 0, 0 );
-            this.groupServer.Name = "groupServer";
-            this.groupServer.Size = new System.Drawing.Size( 321, 71 );
-            this.groupServer.TabIndex = 0;
-            this.groupServer.TabStop = false;
-            this.groupServer.Text = "langServer";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton1.Location = new System.Drawing.Point( 3, 16 );
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size( 85, 37 );
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton2.Location = new System.Drawing.Point( 88, 16 );
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size( 85, 37 );
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton3.Location = new System.Drawing.Point( 173, 16 );
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size( 85, 37 );
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton4.Location = new System.Drawing.Point( 258, 16 );
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size( 85, 37 );
-            this.radioButton4.TabIndex = 10;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add( this.radioButton4 );
-            this.groupBox1.Controls.Add( this.radioButton3 );
-            this.groupBox1.Controls.Add( this.radioButton2 );
-            this.groupBox1.Controls.Add( this.radioButton1 );
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point( 3, 16 );
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size( 315, 56 );
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Tag = "langProxyType";
-            this.groupBox1.Text = "langProxyType";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
@@ -1031,20 +1031,26 @@
             this.tabNet.ResumeLayout( false );
             this.groupProxy.ResumeLayout( false );
             this.groupProxy.PerformLayout();
+            this.groupBox1.ResumeLayout( false );
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.groupServer.ResumeLayout( false );
+            this.groupServer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabGame.ResumeLayout( false );
             this.tabSubGame.ResumeLayout( false );
             this.tabInterface.ResumeLayout( false );
             this.tabInterface.PerformLayout();
+            this.groupBox2.ResumeLayout( false );
+            this.groupBox2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout( false );
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numTextDelay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numScrollStep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numScrollDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTextDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCombatDamage)).EndInit();
             this.groupLanguage.ResumeLayout( false );
             this.groupLanguage.PerformLayout();
-            this.tabPage2.ResumeLayout( false );
-            this.tabPage2.PerformLayout();
             this.tabCombat.ResumeLayout( false );
             this.tabCombat.PerformLayout();
             this.groupCombatMessages.ResumeLayout( false );
@@ -1058,27 +1064,21 @@
             this.groupVolume.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackSound)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackMusic)).EndInit();
-            this.tabRoot.ResumeLayout( false );
-            ((System.ComponentModel.ISupportInitialize)(this.numCombatDamage)).EndInit();
-            this.groupBox2.ResumeLayout( false );
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout( false );
-            this.groupBox3.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout( false );
-            this.flowLayoutPanel1.PerformLayout();
+            this.tabMisc.ResumeLayout( false );
+            this.tabMisc.PerformLayout();
             this.groupBox4.ResumeLayout( false );
             this.groupBox4.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout( false );
             this.flowLayoutPanel2.PerformLayout();
+            this.groupBox3.ResumeLayout( false );
+            this.groupBox3.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout( false );
+            this.flowLayoutPanel1.PerformLayout();
+            this.tabRoot.ResumeLayout( false );
             this.flowLayoutPanel3.ResumeLayout( false );
             this.flowLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout( false );
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.groupServer.ResumeLayout( false );
-            this.groupServer.PerformLayout();
-            this.groupBox1.ResumeLayout( false );
-            this.groupBox1.PerformLayout();
             this.ResumeLayout( false );
             this.PerformLayout();
 
@@ -1105,7 +1105,7 @@
         private System.Windows.Forms.Label labelScrollDelay;
         private System.Windows.Forms.NumericUpDown numScrollStep;
         private System.Windows.Forms.NumericUpDown numScrollDelay;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabMisc;
         private System.Windows.Forms.TabPage tabVideo;
         private System.Windows.Forms.TabPage tabSound;
         private System.Windows.Forms.GroupBox groupVolume;

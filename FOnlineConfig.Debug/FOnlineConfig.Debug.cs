@@ -86,7 +86,7 @@ namespace FOnlineConfigExtension
                     if( lang.Id == "engl" )
                         tags.Remove( field.Name );
 
-                    if( field.Name == "Id" || field.Name == "Name" )
+                    if( field.IsInitOnly ) // readonly
                         continue;
 
                     fieldsCount++;

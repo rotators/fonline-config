@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Drawing;
 
 using FOnlineConfig.ExtensionMethods;
 using FOnlineConfig.Interface;
@@ -11,9 +12,10 @@ namespace FOnlineConfig
     {
         public frmMain()
         {
-            this.KeyPreview = true;
-
             InitializeComponent();
+
+            //tabRoot.AutoSize = true;
+
             foreach( InterfaceLanguage lang in InterfaceLanguage.Languages )
             {
                 this.AddLanguage( lang );
@@ -31,6 +33,14 @@ namespace FOnlineConfig
                 cmbLanguages.SelectedIndex = cmbLanguages.Items.IndexOf( InterfaceLanguage.DefaultLanguage.Name );
                 ChangeLanguage( InterfaceLanguage.DefaultLanguage );
             }
+
+
+            List<Control> controls = new List<Control>();
+            foreach( Control c in controls )
+            {
+                c.BackColor = Color.Aqua;
+            }
+            this.Invalidate();
         }
 
         public frmMain( object cfg )

@@ -16,15 +16,6 @@ namespace FOnlineConfig.Interface
             Tools
         };
 
-        /// <summary>
-        /// Refresh main window
-        /// </summary>
-        /// <remarks>Available for extensions</remarks>
-        public static void Refresh()
-        {
-            FOnlineConfig.formMain.RefreshSize();
-        }
-
         public static bool AddRootTabPage( TabPage page )
         {
             if( FOnlineConfig.formMain == null )
@@ -40,8 +31,8 @@ namespace FOnlineConfig.Interface
                 return (false);
 
             TabControl parent = null;
-            if( subTab == SubTab.Game )
-                parent = FOnlineConfig.formMain.tabSubGame;
+            //if( subTab == SubTab.Game )
+              //  parent = FOnlineConfig.formMain.tabSubGame;
 
             if( parent == null )
                 return (false);

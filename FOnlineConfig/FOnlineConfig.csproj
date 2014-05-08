@@ -50,7 +50,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DllExtentsion.cs" />
+    <Compile Include="CSharpDLL\DllExtentsion.cs" />
+    <Compile Include="CSharpDLL\Loader.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="FOnlineConfig.cs" />
     <Compile Include="Interface\Interface.cs" />
